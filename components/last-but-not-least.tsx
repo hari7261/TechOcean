@@ -17,11 +17,17 @@ export const LastButNotLeast = () => {
           <div className={titleWrapper({ class: "items-center" })}>
             <div>
               <h1 className={title({ size: "lg" })}>Must Try&nbsp;</h1>
-              <h1 className={title({ color: "yellow", size: "lg" })}>TechOcean</h1>
+              <h1 className={title({ color: "yellow", size: "lg" })}>
+                TechOcean
+              </h1>
             </div>
             <div>
-              <h1 className={title({ size: "lg" })}>It's Your hub for&nbsp;</h1>
-              <h1 className={title({ size: "lg", color: "pink" })}>Open Source.</h1>
+              <h1 className={title({ size: "lg" })}>
+                It&apos;s Your hub for&nbsp;
+              </h1>
+              <h1 className={title({ size: "lg", color: "pink" })}>
+                Open Source.
+              </h1>
             </div>
           </div>
           <p
@@ -30,7 +36,8 @@ export const LastButNotLeast = () => {
                 "mt-4 md:w-full text-center flex justify-center items-center",
             })}
           >
-            Dive into a wealth of open-source resources, tools, and projects to enhance your development journey.
+            Dive into a wealth of open-source resources, tools, and projects to
+            enhance your development journey.
           </p>
         </div>
         {/* <FeaturesGrid features={landingContent.fullFeatures} /> */}

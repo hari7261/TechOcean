@@ -1,9 +1,8 @@
 import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
+
 import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import Badge from "@/components/chip";
 import TrustedBy from "@/components/trusted";
@@ -23,7 +22,9 @@ export default function Home() {
           to My Personal Website&nbsp;
         </h1>
         <br />
-        <h1 className={title({ size: "lg" })}>The modern and dynamic TechOcean </h1>
+        <h1 className={title({ size: "lg" })}>
+          The modern and dynamic TechOcean{" "}
+        </h1>
         <h2 className="font-normal text-gray-500 py-2">
           We turn Ideas into Reality — One Bold Innovation at a Time!.
         </h2>

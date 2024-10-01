@@ -1,7 +1,9 @@
-import { title } from "@/components/primitives";
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "@nextui-org/link";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
+
+import { title } from "@/components/primitives";
 
 export default function DocsPage() {
   return (
@@ -11,10 +13,10 @@ export default function DocsPage() {
         <h1 className={title({ size: "lg" })}>Documentation</h1>
         <p className="text-white-600 mt-4">
           Welcome to the official documentation page! This guide will help you
-          understand how to use, contribute to, and extend the projects, templates, 
-          and resources available on this site. Whether you're a beginner or an 
-          experienced developer, you'll find everything you need here to get started 
-          and collaborate effectively.
+          understand how to use, contribute to, and extend the projects,
+          templates, and resources available on this site. Whether you're a
+          beginner or an experienced developer, you'll find everything you need
+          here to get started and collaborate effectively.
         </p>
       </section>
 
@@ -22,8 +24,9 @@ export default function DocsPage() {
       <section className="max-w-4xl">
         <h2 className="text-3xl font-semibold mb-2">Getting Started</h2>
         <p className="text-white-600 mb-4">
-          Before diving into the projects, ensure you have the required tools installed. 
-          Follow the steps below to set up your environment and run your first project.
+          Before diving into the projects, ensure you have the required tools
+          installed. Follow the steps below to set up your environment and run
+          your first project.
         </p>
         <h3 className="text-xl font-medium mb-2">Prerequisites</h3>
         <ul className="list-disc list-inside mb-4">
@@ -37,8 +40,8 @@ export default function DocsPage() {
           <Code>{`git clone <repository_url>\ncd project-name\nnpm install\nnpm run dev`}</Code>
         </div>
         <p className="text-white-600">
-          Now, you’re ready to start developing! If you encounter issues, check the 
-          troubleshooting section below.
+          Now, you’re ready to start developing! If you encounter issues, check
+          the troubleshooting section below.
         </p>
       </section>
 
@@ -46,16 +49,18 @@ export default function DocsPage() {
       <section className="max-w-4xl">
         <h2 className="text-3xl font-semibold mb-2">Project Structure</h2>
         <p className="text-white-600 mb-4">
-          Here's a breakdown of the file and folder structure of each project, so you can 
-          understand where to find key components and how the codebase is organized.
+          Here's a breakdown of the file and folder structure of each project,
+          so you can understand where to find key components and how the
+          codebase is organized.
         </p>
         {/* Wrap the code block in a div */}
         <div className="bg-white-100 p-4 rounded-md mb-4">
           <Code>{`/src\n  /components\n  /pages\n  /utils\n  index.js\n  package.json`}</Code>
         </div>
         <p className="text-white-600">
-          The core components and pages are located in the `src` directory. The `components` 
-          folder contains reusable UI elements, while `pages` defines the routes and views.
+          The core components and pages are located in the `src` directory. The
+          `components` folder contains reusable UI elements, while `pages`
+          defines the routes and views.
         </p>
       </section>
 
@@ -63,20 +68,21 @@ export default function DocsPage() {
       <section className="max-w-4xl">
         <h2 className="text-3xl font-semibold mb-2">Core Concepts</h2>
         <p className="text-white-600 mb-4">
-          These projects focus on delivering scalable, high-performance systems. The following 
-          key concepts are applied throughout the development:
+          These projects focus on delivering scalable, high-performance systems.
+          The following key concepts are applied throughout the development:
         </p>
         <ul className="list-disc list-inside mb-4">
           <li>
-            <strong>Backend Development:</strong> APIs are built using Node.js and Express.js 
-            for creating RESTful services.
+            <strong>Backend Development:</strong> APIs are built using Node.js
+            and Express.js for creating RESTful services.
           </li>
           <li>
-            <strong>Frontend Development:</strong> The UI is crafted with modern JavaScript 
-            frameworks like React and Next.js.
+            <strong>Frontend Development:</strong> The UI is crafted with modern
+            JavaScript frameworks like React and Next.js.
           </li>
           <li>
-            <strong>Database Management:</strong> MongoDB is used for handling data efficiently.
+            <strong>Database Management:</strong> MongoDB is used for handling
+            data efficiently.
           </li>
         </ul>
       </section>
@@ -85,15 +91,24 @@ export default function DocsPage() {
       <section className="max-w-4xl">
         <h2 className="text-3xl font-semibold mb-2">API Documentation</h2>
         <p className="text-white-600 mb-4">
-          If your project includes APIs, here are the available endpoints, methods, and parameters.
-          This will help you interact with the backend services easily.
+          If your project includes APIs, here are the available endpoints,
+          methods, and parameters. This will help you interact with the backend
+          services easily.
         </p>
         <h3 className="text-xl font-medium mb-2">Endpoints</h3>
         <ul className="list-disc list-inside mb-4">
-          <li><strong>GET /api/users:</strong> Fetch a list of users.</li>
-          <li><strong>POST /api/users:</strong> Create a new user.</li>
-          <li><strong>PUT /api/users/:id:</strong> Update user details.</li>
-          <li><strong>DELETE /api/users/:id:</strong> Remove a user.</li>
+          <li>
+            <strong>GET /api/users:</strong> Fetch a list of users.
+          </li>
+          <li>
+            <strong>POST /api/users:</strong> Create a new user.
+          </li>
+          <li>
+            <strong>PUT /api/users/:id:</strong> Update user details.
+          </li>
+          <li>
+            <strong>DELETE /api/users/:id:</strong> Remove a user.
+          </li>
         </ul>
       </section>
 
@@ -101,13 +116,18 @@ export default function DocsPage() {
       <section className="max-w-4xl">
         <h2 className="text-3xl font-semibold mb-2">Contributing</h2>
         <p className="text-white-600 mb-4">
-          Contributions are welcome! Follow the guidelines below to contribute to the projects.
+          Contributions are welcome! Follow the guidelines below to contribute
+          to the projects.
         </p>
         <ul className="list-disc list-inside mb-4">
           <li>Fork the repository and clone it locally.</li>
           <li>Create a new branch for your feature or bugfix.</li>
-          <li>Ensure the code passes all tests and follows coding standards.</li>
-          <li>Submit a pull request with a detailed explanation of your changes.</li>
+          <li>
+            Ensure the code passes all tests and follows coding standards.
+          </li>
+          <li>
+            Submit a pull request with a detailed explanation of your changes.
+          </li>
         </ul>
       </section>
 
@@ -115,8 +135,9 @@ export default function DocsPage() {
       <section className="max-w-4xl">
         <h2 className="text-3xl font-semibold mb-2">Testing & Deployment</h2>
         <p className="text-white-600 mb-4">
-          Projects include unit and integration tests to ensure reliability. Here's how you can run the tests 
-          and deploy the application to production.
+          Projects include unit and integration tests to ensure reliability.
+          Here's how you can run the tests and deploy the application to
+          production.
         </p>
         <h3 className="text-xl font-medium mb-2">Running Tests</h3>
         <div className="bg-white-100 p-4 rounded-md mb-4">
@@ -124,7 +145,8 @@ export default function DocsPage() {
         </div>
         <h3 className="text-xl font-medium mb-2">Deployment</h3>
         <p className="text-white-600 mb-4">
-          To deploy, follow these instructions for deploying on platforms like Vercel or Heroku.
+          To deploy, follow these instructions for deploying on platforms like
+          Vercel or Heroku.
         </p>
       </section>
 
@@ -132,14 +154,25 @@ export default function DocsPage() {
       <section className="max-w-4xl">
         <h2 className="text-3xl font-semibold mb-2">FAQs & Troubleshooting</h2>
         <p className="text-white-600 mb-4">
-          Having issues? Check out the FAQs or troubleshooting tips to resolve common problems.
+          Having issues? Check out the FAQs or troubleshooting tips to resolve
+          common problems.
         </p>
         <ul className="list-disc list-inside mb-4">
-          <li><strong>Q:</strong> What do I do if the server doesn't start?<br/><strong>A:</strong> Ensure Node.js is installed and check the logs for specific errors.</li>
-          <li><strong>Q:</strong> How do I connect to the database?<br/><strong>A:</strong> Ensure MongoDB is running locally or configure a remote database in the environment variables.</li>
+          <li>
+            <strong>Q:</strong> What do I do if the server doesn't start?
+            <br />
+            <strong>A:</strong> Ensure Node.js is installed and check the logs
+            for specific errors.
+          </li>
+          <li>
+            <strong>Q:</strong> How do I connect to the database?
+            <br />
+            <strong>A:</strong> Ensure MongoDB is running locally or configure a
+            remote database in the environment variables.
+          </li>
         </ul>
       </section>
-      
+
       {/* License */}
       <section className="max-w-4xl">
         <h2 className="text-3xl font-semibold mb-2">License</h2>

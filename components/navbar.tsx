@@ -16,15 +16,7 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-  Logo,
-} from "@/components/icons";
+import { GithubIcon, SearchIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
@@ -50,8 +42,8 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      position="sticky"
       className="dark:border-none border rounded-full max-w-[60%] flex justify-center items-center mx-auto mt-3 bg-opacity-20 backdrop-filter backdrop-blur-lg bg-white/10"
+      position="sticky"
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -65,7 +57,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  "data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
                 color="foreground"
                 href={item.href}
@@ -89,8 +81,8 @@ export const Navbar = () => {
             isExternal
             as={Link}
             className="text-sm font-normal text-default-600"
-            href={siteConfig.links.sponsor}
             color="primary"
+            href={siteConfig.links.sponsor}
             variant="light"
           >
             Login
@@ -99,8 +91,8 @@ export const Navbar = () => {
             isExternal
             as={Link}
             className="text-sm font-normal text-default-600 text-white bg-blue-600"
-            href={siteConfig.links.sponsor}
             color="primary"
+            href={siteConfig.links.sponsor}
             variant="shadow"
           >
             Start Free Trial

@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Image,
-  Button,
-} from "@nextui-org/react";
+import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
 
 export default function FeaturesBento() {
   return (
@@ -66,8 +59,12 @@ export default function FeaturesBento() {
         className="w-full h-[300px] col-span-12 sm:col-span-5"
       >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">Templates</p>
-          <h4 className="text-white font-medium text-2xl">Reusable Code Templates</h4>
+          <p className="text-tiny text-white/60 uppercase font-bold">
+            Templates
+          </p>
+          <h4 className="text-white font-medium text-2xl">
+            Reusable Code Templates
+          </h4>
         </CardHeader>
         <Image
           removeWrapper
