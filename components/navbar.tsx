@@ -48,7 +48,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="font-bold text-inherit">Easy NextUI</p>
+            <p className="font-bold text-inherit">TechOcean</p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2 lg:justify-center lg:items-center lg:mx-auto">
@@ -90,7 +90,7 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-default-600 text-white bg-blue-600"
+            className="text-sm font-normal text-white bg-blue-600"
             color="primary"
             href={siteConfig.links.sponsor}
             variant="shadow"
